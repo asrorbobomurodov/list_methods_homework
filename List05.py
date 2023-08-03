@@ -9,4 +9,11 @@ def main(numbers1, numbers2):
     Returns:
         list: return answer
     """
-    return
+    x = numbers1.pop()
+    numbers2.insert(0, x)
+    i = 0
+    while len(numbers2)>i:
+        numbers1.append(numbers2[i])
+        i = i+1
+    return numbers1
+print(main([1,3,4,5], [9,8,7]))

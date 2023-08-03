@@ -7,4 +7,9 @@ def main(fruits1, fruits2):
     Returns:
         list: return answer
     """
-    return
+    i = 0
+    while len(fruits2)>i:
+        fruits1.append(fruits2[i])
+        i += 1
+    return fruits1
+print(main(["Apple", "grape"], ["kiwi", "pear"]))
